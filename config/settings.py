@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     #장고 앱
+    'critique',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# media 루트 설정
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+# static 루트 설정
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
